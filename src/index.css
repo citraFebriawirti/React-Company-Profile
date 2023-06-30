@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Quicksand";
+}
+@font-face {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: bold;
+  src: local("Quicksand"), url("./fonts/QUICKSAND-MEDIUM.woff") format("woff");
+}
+
+.carousel-item {
+  background-color: rgba(0, 128, 128, 0.5);
+}
