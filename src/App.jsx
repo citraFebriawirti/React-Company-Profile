@@ -1,23 +1,18 @@
 import { useState } from "react";
 import "./App.css";
-import About from "./Component/About";
-
-import Footer from "./Component/Footer";
-import Home from "./Component/Home";
-import Navbar from "./Component/Navbar";
-
-import Contact from "./Component/Contact";
-import Blog from "./Component/Blog";
+import { Routes, Route } from "react-router-dom";
+import Landingpage from "./Component/LandingPage/Landingpage";
+import Login from "./Component/Login";
+import Register from "./Component/Register";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Home />
-      <About />
-      <Blog />
-      <Contact />
-      <Footer />
+      <Routes>
+        <Route path="/" element={<Landingpage />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+      </Routes>
     </div>
   );
 }

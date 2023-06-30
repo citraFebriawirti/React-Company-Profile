@@ -119,9 +119,11 @@ export default function NavBar() {
                 </Link>
               </li>
               <li>
-                <button className="btn btn-sm btn-glass bg-teal-600 normal-case">
-                  Register
-                </button>
+                <Link to="/register">
+                  <button className="btn btn-sm btn-glass bg-teal-600 normal-case">
+                    Register
+                  </button>
+                </Link>
               </li>
             </ul>
           </div>
